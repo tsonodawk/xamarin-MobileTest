@@ -17,5 +17,15 @@ namespace MobileTest
         {
             InitializeComponent();
         }
+
+        void OnSaveButtonClicked(object sender, EventArgs e)
+        {
+            //TODO: 保存ボタンの処理
+        }
+
+        void OnDeleteButtonClicked(object sender, EventArgs e)
+        {
+            //TODO: 削除ボタンの処理
+        }
     }
 }
