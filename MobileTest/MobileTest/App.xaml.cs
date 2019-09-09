@@ -10,7 +10,8 @@ namespace MobileTest
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new MobileTest.MainPage());
         }
 
         protected override void OnStart()

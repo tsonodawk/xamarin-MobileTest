@@ -13,13 +13,10 @@
            VerticalOptions="CenterAndExpand" />
     </StackLayout>-->
      <StackLayout Margin="10,35,10,10">
-            <Label Text="Notes"
+            <Label Text="Welcome MobileTes"
                    HorizontalOptions="Center"
                    FontAttributes="Bold" />
-            <Editor x:Name="editor"
-                    Placeholder="Enter your note"
-                    HeightRequest="100" />
-            <Grid>
+            <!--<Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
@@ -29,7 +26,10 @@
                 <Button Grid.Column="1"
                         Text="Delete"
                         Clicked="OnDeleteButtonClicked"/>
-            </Grid>
+            </Grid>-->
+            <Button Text="ログイン画面へ"
+                    Clicked="OnClickToLogin"
+                    />
         </StackLayout>
 
 </ContentPage>

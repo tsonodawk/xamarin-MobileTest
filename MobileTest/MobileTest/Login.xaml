@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobileTest.Login">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="ログイン"
+                   HorizontalOptions="Center"/>
+            <Editor x:Name="company_id"
+                    Placeholder="企業コード"
+                    HeightRequest="100"/>
+            <Editor x:Name="login_id"
+                    Placeholder="ログインID"
+                    HeightRequest="100"/>
+            <Editor x:Name="pass_wd"
+                    Placeholder="パスワード"
+                    HeightRequest="100"/>
+            <Button Text="ログイン"
+                    Clicked="OnClickToCompanySelect"
+                    />
+            <Button Text="戻る"
+                    Clicked="OnClickToMainPage"
+                    />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
+

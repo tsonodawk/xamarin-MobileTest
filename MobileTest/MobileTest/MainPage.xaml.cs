@@ -27,5 +27,14 @@ namespace MobileTest
         {
             //TODO: 削除ボタンの処理
         }
+
+        void OnClickToLogin(object sender, EventArgs e)
+        {
+            // 新しいページを開くが戻るボタンはアプリが終了する感じっぽい
+            //Application.Current.MainPage = new Login();
+
+            // NavigationPageでの画面遷移(App.xaml.csの変更も必要)
+            Navigation.PushAsync(new Login(), true);
+        }
     }
 }
