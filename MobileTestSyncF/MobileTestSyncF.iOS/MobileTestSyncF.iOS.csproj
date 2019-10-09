@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{87F07735-3491-4825-8AAF-ABA1A74EDB1A}</ProjectGuid>
+    <ProjectGuid>{17A917CD-44F0-407B-9C48-1BEE74BCE42B}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MobileTest.iOS</RootNamespace>
+    <RootNamespace>MobileTestSyncF.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MobileTest.iOS</AssemblyName>
+    <AssemblyName>MobileTestSyncF.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
@@ -121,16 +121,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.0" />
-    <PackageReference Include="Syncfusion.Xamarin.Core">
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfSchedule">
       <Version>17.3.0.14</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\MobileTest\MobileTest.csproj">
-      <Project>{E7F78D68-CD12-4BED-B29B-EAD4800C0A6A}</Project>
-      <Name>MobileTest</Name>
+    <ProjectReference Include="..\MobileTestSyncF\MobileTestSyncF.csproj">
+      <Project>{8CA7DBB4-E5EC-4A31-9FD3-1AA64CEC1020}</Project>
+      <Name>MobileTestSyncF</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
