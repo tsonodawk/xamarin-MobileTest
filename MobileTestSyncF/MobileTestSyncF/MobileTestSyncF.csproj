@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfSchedule" Version="17.3.0.14" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="View\RecursiveAppointments.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\MonthCalc.xaml.cs">
+      <DependentUpon>MonthCalc.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="View\RecursiveAppointments.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+</Project>

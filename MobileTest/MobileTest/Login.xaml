@@ -7,13 +7,13 @@
         <StackLayout Margin="20">
             <Label Text="ログイン"
                    HorizontalOptions="Center"/>
-            <Editor x:Name="company_id"
+            <Editor x:Name="companyId"
                     Placeholder="企業コード"
                     HeightRequest="100"/>
-            <Editor x:Name="login_id"
-                    Placeholder="ログインID"
+            <Editor x:Name="userId"
+                    Placeholder="ユーザーID"
                     HeightRequest="100"/>
-            <Editor x:Name="pass_wd"
+            <Editor x:Name="passwd"
                     Placeholder="パスワード"
                     HeightRequest="100"/>
             <Button Text="ログイン"
