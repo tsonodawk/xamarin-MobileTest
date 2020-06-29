@@ -7,6 +7,7 @@ using Xamarin.Forms;
 
 namespace MobileTestSyncF.ViewModel
 {
+   
     public class MonthCalcViewModel
     {
 
@@ -19,6 +20,8 @@ namespace MobileTestSyncF.ViewModel
             CreateEventNameCollection();
             CreateColorCollection();
             CreateAppointments();
+            
+           
         }
 
         /// <summary>
@@ -49,6 +52,7 @@ namespace MobileTestSyncF.ViewModel
                         if (AdditionalAppointmentIndex % 3 == 0)
                             MonthCalc.AllDay = true;
                         MonthCalcs.Add(MonthCalc);
+       
                     }
                 }
                 else
@@ -59,7 +63,10 @@ namespace MobileTestSyncF.ViewModel
                     MonthCalc.EventName = eventNameCollection[randomTime.Next(9)];
                     MonthCalc.color = colorCollection[randomTime.Next(9)];
                     MonthCalcs.Add(MonthCalc);
+
+                    
                 }
+                
             }
         }
 
@@ -129,5 +136,24 @@ namespace MobileTestSyncF.ViewModel
         //    AppointmentCollection.Add(clientMonthCalc);
 
         //}
+
+
+
+
+        private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs args)
+        {
+        
+            if (args.Appointment != null)
+            {
+                var appointment = (args.Appointment as ScheduleAppointment);
+                // DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+            }
+            else
+            {
+                // DisplayAlert("", "No Events", "ok");
+            }
+        }
+
+
     }
 }

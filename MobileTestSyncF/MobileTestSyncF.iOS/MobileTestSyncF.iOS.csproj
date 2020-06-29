@@ -125,11 +125,17 @@
     <PackageReference Include="Syncfusion.Xamarin.SfSchedule">
       <Version>17.3.0.14</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfDataForm">
+      <Version>17.3.0.17</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Buttons">
+      <Version>17.3.0.17</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\MobileTestSyncF\MobileTestSyncF.csproj">
-      <Project>{8CA7DBB4-E5EC-4A31-9FD3-1AA64CEC1020}</Project>
+      <Project>{72E8BB7B-1EB0-4422-A591-1F620DAE19BF}</Project>
       <Name>MobileTestSyncF</Name>
     </ProjectReference>
   </ItemGroup>

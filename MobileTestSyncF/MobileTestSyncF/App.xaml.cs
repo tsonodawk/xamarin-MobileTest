@@ -12,7 +12,8 @@ namespace MobileTestSyncF
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new NavigationPage(new MobileTestSyncF.Views.MonthCalc());
+            //MainPage = new NavigationPage(new MobileTestSyncF.Views.MonthCalc());
+            MainPage = new NavigationPage(new MobileTestSyncF.Views.LoginPage());
         }
 
         protected override void OnStart()

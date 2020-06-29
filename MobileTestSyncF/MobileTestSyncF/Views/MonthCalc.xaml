@@ -6,30 +6,35 @@
         xmlns:local="clr-namespace:MobileTestSyncF.ViewModel"
         xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms">
     <ContentPage.Content>
-        <syncfusion:SfSchedule x:Name="schedule"
-            DataSource = "{Binding MonthCalcs}"
-	        ScheduleView="MonthView"
-	        ShowAppointmentsInline="True">
+        <StackLayout>
+            <syncfusion:SfSchedule x:Name="schedule"
+                DataSource = "{Binding MonthCalcs}"
+	            ScheduleView="MonthView"
+	            ShowAppointmentsInline="True"
+                VerticalOptions="FillAndExpand">
 
-            <!--<syncfusion:SfSchedule.MonthViewSettings>
-                <syncfusion:MonthViewSettings
-                        AppointmentIndicatorCount = "2" >
-                </syncfusion:MonthViewSettings>
-            </syncfusion:SfSchedule.MonthViewSettings>-->
+                <syncfusion:SfSchedule.MonthViewSettings>
+                    <syncfusion:MonthViewSettings                       
+                            AppointmentIndicatorCount = "1">
+                    </syncfusion:MonthViewSettings>
+                </syncfusion:SfSchedule.MonthViewSettings>
 
-	        <syncfusion:SfSchedule.BindingContext>
-		        <local:MonthCalcViewModel/>
-	        </syncfusion:SfSchedule.BindingContext>
+	            <syncfusion:SfSchedule.BindingContext>
+		            <local:MonthCalcViewModel/>
+	            </syncfusion:SfSchedule.BindingContext>
 
-            <syncfusion:SfSchedule.AppointmentMapping>
-                <syncfusion:ScheduleAppointmentMapping
-                ColorMapping="color"
-                EndTimeMapping="To"
-                StartTimeMapping="From"
-                SubjectMapping="EventName"
-                IsAllDayMapping="AllDay"/>
-            </syncfusion:SfSchedule.AppointmentMapping>
+                <syncfusion:SfSchedule.AppointmentMapping>
+                    <syncfusion:ScheduleAppointmentMapping
+                    ColorMapping="color"
+                    EndTimeMapping="To"
+                    StartTimeMapping="From"
+                    SubjectMapping="EventName"
+                    IsAllDayMapping="AllDay"/>
+                </syncfusion:SfSchedule.AppointmentMapping>
 
-        </syncfusion:SfSchedule>
+            </syncfusion:SfSchedule>
+
+        </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

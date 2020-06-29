@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Syncfusion.SfSchedule.XForms.iOS;
+using Syncfusion.XForms.iOS.Border;
+using Syncfusion.XForms.iOS.Buttons;
+using Syncfusion.XForms.iOS.DataForm;
 using UIKit;
 
 namespace MobileTestSyncF.iOS
@@ -23,9 +27,12 @@ namespace MobileTestSyncF.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            Syncfusion.SfSchedule.XForms.iOS.SfScheduleRenderer.Init();
-            LoadApplication(new App());
+            SfScheduleRenderer.Init();
+            SfDataFormRenderer.Init();
 
+            LoadApplication(new App());
+            SfBorderRenderer.Init();
+            SfButtonRenderer.Init();
             return base.FinishedLaunching(app, options);
         }
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Syncfusion.SfSchedule.XForms;
 
 namespace MobileTestSyncF.Views
 {
@@ -16,4 +17,5 @@ namespace MobileTestSyncF.Views
             InitializeComponent();
         }
     }
+
 }

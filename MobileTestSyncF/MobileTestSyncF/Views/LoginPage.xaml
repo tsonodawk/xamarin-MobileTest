@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileTestSyncF.ViewModel"
+             xmlns:dataForm="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="MobileTestSyncF.Views.LoginPage">
+
+    <ContentPage.BindingContext>
+        <local:LoginViewModel/>
+    </ContentPage.BindingContext> 
+
+    <ContentPage.Content>
+        <!-- TODO: レイアウトの配置・方法を検討：Stackの設定等 -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+                <dataForm:SfDataForm Grid.Row="0" x:Name="dataForm"
+                                     DataObject="{Binding LoginInfo}"
+                                     LayoutOptions="TextInputLayout"/>
+            
+            <buttons:SfButton x:Name="SfButton"
+                              Grid.Row="1"
+                              HeightRequest="50"
+                              Text="LOGIN"
+                              Clicked="LoginButton_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
